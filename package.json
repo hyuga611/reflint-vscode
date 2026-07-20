@@ -1,0 +1,49 @@
+{
+  "name": "reflint-vscode",
+  "displayName": "reflint — AGENTS.md / llms.txt reference integrity",
+  "description": "Underlines commands, scripts, and paths in AGENTS.md / llms.txt / CLAUDE.md that no longer exist, as you edit. Powered by reflint.",
+  "version": "0.1.0",
+  "publisher": "hyuga611",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Linters"
+  ],
+  "keywords": [
+    "agents.md",
+    "llms.txt",
+    "claude",
+    "ai",
+    "linter",
+    "reference-integrity"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hyuga611/reflint-vscode.git"
+  },
+  "activationEvents": [
+    "onLanguage:markdown",
+    "onLanguage:plaintext",
+    "workspaceContains:**/AGENTS.md",
+    "workspaceContains:**/llms.txt",
+    "workspaceContains:**/CLAUDE.md"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "reflint",
+      "properties": {
+        "reflint.codeBlocks": {
+          "type": "boolean",
+          "default": false,
+          "description": "Also check bare paths inside fenced code blocks (reflint --code-blocks)."
+        }
+      }
+    }
+  },
+  "dependencies": {
+    "@hyuga/reflint": "^0.5.1"
+  }
+}

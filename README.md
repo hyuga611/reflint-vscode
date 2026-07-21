@@ -16,13 +16,25 @@ The extension runs `reflint --format json` on the file and turns each finding in
 
 `@hyuga/reflint` is bundled as a dependency, so no separate install is needed. Node ships with VS Code.
 
-## Install (from source, until Marketplace)
+## Install
+
+From the VS Code Marketplace — search **"reflint"** in the Extensions view, or:
+
+```bash
+code --install-extension hyuga611.reflint-vscode
+```
+
+Also on [Open VSX](https://open-vsx.org/) for VSCodium / Cursor / Windsurf.
+
+<details>
+<summary>Build from source</summary>
 
 ```bash
 npm install
 npx @vscode/vsce package     # -> reflint-vscode-0.1.0.vsix
 code --install-extension reflint-vscode-0.1.0.vsix
 ```
+</details>
 
 ## Related
 

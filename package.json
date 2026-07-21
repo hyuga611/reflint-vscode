@@ -5,6 +5,11 @@
   "version": "0.1.0",
   "publisher": "hyuga611",
   "license": "MIT",
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#1e293b",
+    "theme": "dark"
+  },
   "engines": {
     "vscode": "^1.75.0"
   },
@@ -22,6 +27,10 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/hyuga611/reflint-vscode.git"
+  },
+  "homepage": "https://github.com/hyuga611/reflint-vscode#readme",
+  "bugs": {
+    "url": "https://github.com/hyuga611/reflint-vscode/issues"
   },
   "activationEvents": [
     "onLanguage:markdown",

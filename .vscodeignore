@@ -2,3 +2,5 @@
 .vscodeignore
 *.vsix
 .git/**
+icon.svg
+package-lock.json

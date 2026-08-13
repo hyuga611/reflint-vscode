@@ -4,6 +4,8 @@
 
 Underlines commands, scripts, and paths in your **`AGENTS.md` / `llms.txt` / `CLAUDE.md`** that no longer exist — right in the editor, as you save. Powered by [reflint](https://github.com/hyuga611/reflint).
 
+When reflint cannot run at all, the extension says so on the first line of the file rather than showing nothing. An editor with no squiggles in it should mean the file is clean, not that the check never happened.
+
 `AGENTS.md` などの中の「もう存在しないコマンド・パス」を、保存のたびにエディタ上で波線表示します。CI（reflint本体）で毎PR落とす前に、書いている最中に気づけます。
 
 ## How it works

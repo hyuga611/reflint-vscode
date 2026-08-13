@@ -2,7 +2,7 @@
   "name": "reflint-vscode",
   "displayName": "reflint — AGENTS.md / llms.txt reference integrity",
   "description": "Underlines commands, scripts, and paths in AGENTS.md / llms.txt / CLAUDE.md that no longer exist, as you edit. Powered by reflint.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "publisher": "hyuga611",
   "license": "MIT",
   "icon": "icon.png",
@@ -53,6 +53,6 @@
     }
   },
   "dependencies": {
-    "@hyuga/reflint": "^0.5.1"
+    "@hyuga/reflint": "^0.10.0"
   }
 }
